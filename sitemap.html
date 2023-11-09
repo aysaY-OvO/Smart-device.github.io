@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии. Выполняем срочные заказы и пилотные образцы до 10 дней.">
     <title>Smart Device</title>
-    <link rel="preload" as="font" href="./fonts/PTMono-Regular.woff2" crossorigin="">
-    <link rel="preload" as="font" href="./fonts/RobotoCondensed-Bold.woff2" crossorigin="">
-    <link rel="preload" as="font" href="./fonts/RobotoCondensed-Regular.woff2" crossorigin="">
-    <link rel="preload" as="font" href="./fonts/Roboto-Medium.woff2" crossorigin="">
+    <link rel="preload" as="font" href="./fonts/pt-mono-v13-cyrillic_latin-regular.woff2" crossorigin="">
+    <link rel="preload" as="font" href="./fonts/roboto-condensed-v27-cyrillic_latin-700.woff2" crossorigin="">
+    <link rel="preload" as="font" href="./fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2" crossorigin="">
+    <link rel="preload" as="font" href="./fonts/roboto-v30-cyrillic-500.woff2" crossorigin="">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
@@ -17,12 +17,14 @@
       <header class="header">
         <div class="container">
           <div class="sitemap-header header__wrapper">
-            <a class="header__logo logo" href="index.html">
-              <picture>
-                <source media="(min-width: 768px)" srcset="./img/logotype-desktop.svg" width="215" height="55">
-                <source media="(min-width: 280px)" srcset="./img/logotype-mobile.svg" width="35" height="35">
-                <img src="./img/logotype-desktop.svg" alt="логотип Smart Device" width="215" height="55">
-              </picture>
+            <a class="header__logo logo" href="#">
+              <svg class="logo__icon" width="55" height="55">
+                <use xlink:href="./img/sprite.svg#logotype"></use>
+              </svg>
+              <div class="logo__text-wrapper">
+                <span class="logo__title">Smart Device</span>
+                <span class="logo__subtitle">умные технологии</span>
+              </div>
             </a>
           </div>
         </div>
