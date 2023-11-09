@@ -17,9 +17,11 @@
       <header class="header">
         <div class="header__wrapper">
           <a class="header__logo logo" href="#">
-          <svg class="logo__icon" width="215" height="55">
-            <use xlink:href="./img/sprite.svg#logotype-desktop" data-logotype="header-logotype"></use>
-          </svg>
+            <picture>
+              <source media="(min-width: 768px)" srcset="./img/logotype-desktop.svg" width="215" height="55">
+              <source media="(min-width: 280px)" srcset="./img/logotype-mobile.svg" width="35" height="35">
+              <img src="./img/logotype-desktop.svg" alt="логотип Smart Device" width="215" height="55">
+            </picture>
           </a>
           <div class="header__user-navigation user-navigation">
             <ul class="user-navigation__list">
@@ -50,7 +52,7 @@
             <div class="preview__content">
               <h1>Печатные платы</h1>
               <span>производство и&nbsp;монтаж, поставка комплектующих, блоков и&nbsp;модулей</span>
-              <a href="#feedback" class="preview__button btn" data-button="preview-button">Получить бесплатную консультацию</a>
+              <a href="#feedback" class="preview__button btn" data-preview-mobile-text="бесплатная консультация" data-preview-tablet-text="Получить бесплатную консультацию"></a>
             </div>
           </div>
         </section>
@@ -119,7 +121,7 @@
 
         <section class="products">
           <div class="products__wrapper">
-            <h2 data-title="products-title">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+            <h2 data-tablet-text="Smart Device предлагает следующие товары и&nbsp;услуги" data-mobile-text="Товары и&nbsp;услуги Smart Device"></h2>
             <ul class="products__list">
               <li>
                 <a href="#">
@@ -233,9 +235,7 @@
         <div class="footer__wrapper">
           <div class="footer__social-links footer__block social-links">
             <a class="footer__logo logo" href="#">
-            <svg class="logo__icon" width="215" height="55">
-              <use xlink:href="./img/sprite.svg#logotype-desktop" data-logotype="footer-logotype"></use>
-            </svg>
+              <img src="./img/logotype-desktop.svg" alt="логотип Smart Device" width="215" height="55">
             </a>
             <ul class="social-links__list">
               <li>
@@ -356,6 +356,6 @@
     </div>
 
     <script src="js/vendor.min.js"></script>
-    <script defer src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
   </body>
 </html>
